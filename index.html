@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Avalie a sua mentoria</h1>
+      <p>Chegou a hora de avaliar a seu mentor. Bora lá?</p>
+      <img src="./images/img1.svg" alt="bubble speech with 3 colored stars and 2 dark">
+    </header>
+    <form action="">
+      <div class="fieldset-wrapper">
+        <fieldset>
+          <div  class="info">
+            <legend id="info">Informações Pessoais</legend>
+          </div>
+          <div class="column-wrapper-name">
+            <div class="input-wrapper">
+            <label for="form-name">Nome</label>
+            <input type="text" id="form-name" name="name" required>
+            </div>
+
+            <div class="input-wrapper">
+            <label for="form-surname">Sobrenome</label>
+            <input type="text" id="form-surname" name="surname" required>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="">Email <span>(digite um email válido)</span></label>
+            <input type="text" id="form-email" name="email" required>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend >Informações do Mentor</legend>
+          <div class="input-wrapper">
+            <label for="form-mentor-name">Selecione quem foi o seu mentor</label>
+            <select name="mentor-name" id="form-mentor-name" required>
+              <option value="Danilo">Danilo Barbosa Dias</option>
+              <option value="Rafaela">Rafaela Pereira Santos</option>
+              <option value="Renan">Renan Severo Silva</option>
+              <option value="Leonardo">Leonardo Costa Rocha</option>
+              <option value="Julia">Julia Lima Correia</option>
+            </select>
+          </div>
+
+          <div class="textarea-wrapper">
+          <label for="form-mentor-feedback">Feedback sobre o mentor</label>
+          <textarea name="mentor-feedback" id="form-mentor-feedback"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="form-mentor-answer" name="mentor-answer">
+            <label for="form-mentor-answer">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Agendando próxima mentoria</legend>
+          
+          <div class="column-wrapper-date">
+          <div class="input-wrapper">
+          <label for="form-date">Data <span>(DD/MM/AAAA)</span></label>
+          <input type="date" id="form-date" name="form-date" required>
+          </div>
+
+          <div class="input-wrapper">
+          <label for="form-begin">Das</label>
+          <input type="time" id="form-begin" name="begin-time" required>
+          </div>
+          
+          <div class="input-wrapper">
+          <label for="form-end">Até</label>
+          <input type="time" id="form-end" name="end-time" required>
+          </div>
+          </div>
+        </fieldset>
+
+      </div>
+      
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+</body>
+</html>
